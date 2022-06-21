@@ -1,0 +1,64 @@
+@use '../util/' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+ *::before,
+ *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: u.$font;
+
+}
+
+nav {
+
+    text-align: center;
+
+
+    li {
+        color: var(--text-color);
+        font-size: 2rem;
+        display: inline;
+        padding-right: 2rem;
+        text-align: center;
+        
+    }
+
+    ul {
+        display: inline-block;
+        
+    }
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 300;
+
+    
+}
+
+main {
+
+    p {
+        color: var(--p-color);
+
+    }
+
+}
+
+aside {
+    color: var(--p-color);
+}
+
+h2 {
+    color: var(--text-color);
+}

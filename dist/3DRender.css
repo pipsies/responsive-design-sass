@@ -1,7 +1,74 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-align: center;
+}
 nav li {
-  color: aquamarine;
-  font-size: 5rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  display: inline;
+  padding-right: 2rem;
+  text-align: center;
 }
 nav ul {
   display: inline-block;
+}
+
+h1 {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+main p {
+  color: var(--p-color);
+}
+
+aside {
+  color: var(--p-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: hsl(0, 0%, 0%);
+  --text-color: hsl(160, 100%, 75%);
+  --p-color: hsl(0, 0%, 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }/*# sourceMappingURL=3DRender.css.map */
