@@ -2,10 +2,11 @@
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto auto;
-gap: 50px;
+gap: 40px;
 
-@media (min-width: 900px){
+@media (min-width: 900px)  {
 grid-template-columns: 2fr 1fr;
+grid-template-rows: auto;
 }
 
     &__main {
@@ -14,7 +15,7 @@ grid-template-columns: 2fr 1fr;
     }
 
 &__main, &__sidebar {
-    padding: 40px;
+    padding: 50px;
 }
 
     &__sidebar{
