@@ -28,5 +28,10 @@ grid-template-rows: auto;
 
     &__sidebar{
         background-color: hsl(300, 100%, 50%);
+        text-align: center;
+
+        @include u.breakpoint-down(medium) {
+            text-align: center;
+        }
     }
 } 

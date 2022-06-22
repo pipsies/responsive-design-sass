@@ -91,4 +91,10 @@ a, a:visited, a:active {
 }
 .grid__sidebar {
   background-color: hsl(300deg, 100%, 50%);
+  text-align: center;
+}
+@media (max-width: 56.25em) {
+  .grid__sidebar {
+    text-align: center;
+  }
 }/*# sourceMappingURL=responsive-layout.css.map */
