@@ -97,12 +97,12 @@ h2 {
 }
 @media (min-width: 43.75em) {
   .grid__main {
-    background-color: hsl(316deg, 31%, 46%);
+    background-color: hsl(316deg, 32%, 44%);
   }
 }
 @media (min-width: 56.25em) {
   .grid__main {
-    background-color: hsl(348deg, 70%, 59%);
+    background-color: hsl(271deg, 76%, 53%);
   }
 }
 .grid__main, .grid__sidebar {
@@ -116,6 +116,10 @@ h2 {
     text-align: center;
   }
 }
-.grid__widget {
-  background-color: hsl(300deg, 100%, 50%);
+.grid__widget, .grid__widget--purple {
+  background-color: hsl(300deg, 36%, 42%);
+  padding: 1rem;
+}
+.grid__widget--purple {
+  background-color: hsl(271deg, 77%, 71%);
 }/*# sourceMappingURL=responsive-layout.css.map */
