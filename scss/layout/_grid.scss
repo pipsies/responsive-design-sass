@@ -1,3 +1,5 @@
+@use '../util/' as u;
+
 .grid {
 display: grid;
 grid-template-columns: 1fr;
@@ -8,7 +10,7 @@ margin-inline: auto;
 width: min(100% - 40px, 1000px);
 
 
-@media (min-width: 900px)  {
+@include u.breakpoint(large)  {
 grid-template-columns: 2fr 1fr;
 grid-template-rows: auto;
 }
