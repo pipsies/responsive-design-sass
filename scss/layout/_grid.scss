@@ -1,5 +1,6 @@
 @use '../util/' as u;
 
+
 .grid {
 display: grid;
 grid-template-columns: 1fr;
@@ -45,13 +46,13 @@ grid-template-rows: auto;
     }
 
     &__widget {
-        $widget: &;
-        background-color: hsl(300, 36%, 42%);
-        //border: 1px solid aliceblue;
         padding: u.rem(16);
+        
+        &.pink {
+            background-color: hsl(300, 36%, 42%);
+        }
 
-        &--purple {
-            @extend #{$widget};
+        &.purple {
             background-color: hsl(271, 77%, 71%);
         }
 

@@ -78,6 +78,14 @@ h2 {
   --p-color: hsl(0, 0%, 100%);
 }
 
+.pink {
+  background-color: hsl(300deg, 36%, 42%);
+}
+
+.purple {
+  background-color: hsl(271deg, 77%, 71%);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -116,10 +124,12 @@ h2 {
     text-align: center;
   }
 }
-.grid__widget, .grid__widget--purple {
-  background-color: hsl(300deg, 36%, 42%);
+.grid__widget {
   padding: 1rem;
 }
-.grid__widget--purple {
+.grid__widget.pink {
+  background-color: hsl(300deg, 36%, 42%);
+}
+.grid__widget.purple {
   background-color: hsl(271deg, 77%, 71%);
 }/*# sourceMappingURL=responsive-layout.css.map */
