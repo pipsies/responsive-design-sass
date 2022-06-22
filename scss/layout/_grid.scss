@@ -20,9 +20,17 @@ grid-template-rows: auto;
     &__main {
         background-color: hsl(271, 76%, 53%);
 
+        @include u.breakpoint(medium) {
+            background-color: hsl(316, 31%, 46%);
+        }
+
+        @include u.breakpoint(large) {
+            background-color: hsl(348, 70%, 59%);
+        }
+
     }
 
-&__main, &__sidebar {
+&__main, &__sidebar {                                                           
     padding: 50px;
 }
 
@@ -34,4 +42,4 @@ grid-template-rows: auto;
             text-align: center;
         }
     }
-} 
+}                      

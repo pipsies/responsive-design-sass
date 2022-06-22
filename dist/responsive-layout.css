@@ -57,10 +57,19 @@ h1, h2, h3 {
 
 p {
   margin-top: 0;
+  font-size: 1em;
 }
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+h1 {
+  font-size: clamp(1.7rem, 1rem + 2vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 0.75rem + 1.5vw, 2.25rem);
 }
 
 :root {
@@ -86,6 +95,16 @@ a, a:visited, a:active {
 .grid__main {
   background-color: hsl(271deg, 76%, 53%);
 }
+@media (min-width: 43.75em) {
+  .grid__main {
+    background-color: hsl(316deg, 31%, 46%);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(348deg, 70%, 59%);
+  }
+}
 .grid__main, .grid__sidebar {
   padding: 50px;
 }
@@ -93,7 +112,7 @@ a, a:visited, a:active {
   background-color: hsl(300deg, 100%, 50%);
   text-align: center;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 56.24875em) {
   .grid__sidebar {
     text-align: center;
   }
