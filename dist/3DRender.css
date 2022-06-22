@@ -70,5 +70,20 @@ a, a:visited, a:active {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   gap: 50px;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.grid__main {
+  background-color: hsl(271deg, 76%, 53%);
+}
+.grid__main, .grid__sidebar {
+  padding: 40px;
+}
+.grid__sidebar {
+  background-color: hsl(300deg, 100%, 50%);
 }/*# sourceMappingURL=3DRender.css.map */
